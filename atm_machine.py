@@ -42,6 +42,17 @@ def main():
 
     print("Welcome to the ATM service of IBBL")
 
+    def reset_pin(old_pin,):
+        matched_pin = int(input("Enter current PIN: "))
+        if old_pin == matched_pin:
+            new_pin = int(input("Enter new PIN: "))
+            old_pin = new_pin
+            print("PIN changed successfully.")
+        else:
+            print("Sorry, PIN did not match.")
+
+        return old_pin
+
     while True:
         given_pin = int(input("Enter your PIN: "))
 
@@ -53,6 +64,7 @@ def main():
 2. Deposit
 3. Withdraw
 4. Statements
+5. Reset PIN
 5. Exit
                     ''')
 
@@ -72,6 +84,8 @@ def main():
                 for i in range(len(trans)):
                     print(f'{i + 1}. {trans[i]}')
             elif choice == 5:
+                pin = reset_pin(pin)
+            elif choice == 6:
                 break
             else:
                 print('Invalid input.')
