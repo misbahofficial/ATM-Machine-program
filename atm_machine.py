@@ -42,7 +42,7 @@ def main():
 
     print("Welcome to the ATM service of IBBL")
 
-    def reset_pin(old_pin,):
+    def reset_pin(old_pin):
         matched_pin = int(input("Enter current PIN: "))
         if old_pin == matched_pin:
             new_pin = int(input("Enter new PIN: "))
