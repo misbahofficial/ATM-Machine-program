@@ -65,7 +65,7 @@ def main():
 3. Withdraw
 4. Statements
 5. Reset PIN
-5. Exit
+6. Exit
                     ''')
 
             choice = int(input("Enter choice: "))
