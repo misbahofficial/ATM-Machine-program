@@ -6,4 +6,6 @@ This is a simple Python program for an ATM/CRM machine. Just to demonstrate Pyth
 2. Deposit
 3. Withdraw
 4. Mini Statements
-5. Exit
+5. Reset PIN
+6. Exit
+7. More to come......
