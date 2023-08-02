@@ -18,9 +18,7 @@ class ATM:
         self.balance += amount
         self.transactions.append(f'Deposited {amount} Taka')
         return f'''
-1
 Amount {amount} has been deposited to your account.
-1
 Your new Balance is {self.balance}
         '''
 
@@ -29,9 +27,7 @@ Your new Balance is {self.balance}
             self.balance -= amount
             self.transactions.append(f'Withdrawn {amount} Taka')
             return f'''
-1
 Amount {amount} has been withdrawn from your account.
-1
 New Balance: {self.balance}
         '''
         else:
